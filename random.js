@@ -1,3 +1,5 @@
+const baseUrl = "https://raw.githubusercontent.com/thomaz-s/Retrowave-Set-Generator/refs/heads/main";
+
 const pistas = [
     {
         nome: "Rainy Night",
@@ -242,18 +244,18 @@ function preencher(){
     }
 
     document.querySelector(".nome_carro").innerHTML = novoConjunto.carro.nome;
-    document.querySelector(".icone_carro").setAttribute("src", `./assets/carros/${novoConjunto.carro.imagem}`);
+    document.querySelector(".icone_carro").setAttribute("src", `${baseUrl}/assets/carros/${novoConjunto.carro.imagem}`);
 
     document.querySelector(".numero_pneu").innerHTML = `Pneu Nº ${novoConjunto.pneu}`;
-    document.querySelector(".icone_pneu").setAttribute("src", `./assets/pneus/${novoConjunto.pneu}.png`);
+    document.querySelector(".icone_pneu").setAttribute("src", `${baseUrl}/assets/pneus/${novoConjunto.pneu}.png`);
 
-    document.querySelector(".sirene").setAttribute("src", novoConjunto.sirene ? "./assets/police_on.png" : "./assets/police_off.png");
+    document.querySelector(".sirene").setAttribute("src", novoConjunto.sirene ? `${baseUrl}/assets/police_on.png` : `${baseUrl}/assets/police_off.png`);
 
     document.querySelector(".numero_placa").innerHTML = `Placa Nº ${novoConjunto.placa}`;
-    document.querySelector(".icone_placa").setAttribute("src", `./assets/placas/${novoConjunto.placa}.png`);
+    document.querySelector(".icone_placa").setAttribute("src", `${baseUrl}/assets/placas/${novoConjunto.placa}.png`);
 
     document.querySelector(".nome_pista").innerHTML = novoConjunto.pista.nome;
-    document.querySelector(".icone_pista").setAttribute("src", `./assets/pistas/${novoConjunto.pista.imagem}`);
+    document.querySelector(".icone_pista").setAttribute("src", `${baseUrl}/assets/pistas/${novoConjunto.pista.imagem}`);
 
     conjuntoAnterior = novoConjunto;
 }
