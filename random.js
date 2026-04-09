@@ -199,11 +199,6 @@ let conjuntoAnterior = {
     }
 }
 
-const ciclo = 100000;
-
-let ultimaAtualizacao;
-let proximaAtualizacao = new Date();
-
 function sorteio(limite){
     return Math.floor(Math.random()*limite);
 }
@@ -258,29 +253,9 @@ function preencher(){
     conjuntoAnterior = novoConjunto;
 }
 
-function atualizarCronometro(){
-    ultimaAtualizacao = new Date();
-    proximaAtualizacao.setTime(proximaAtualizacao.getTime() + ciclo);
-
-    document.getElementById("ultima-atualizacao").innerText = `Última Atualização: ${ultimaAtualizacao.toLocaleTimeString()}`;
-    document.getElementById("relogio").innerText = `Agora: ${new Date().toLocaleTimeString()}`
-    document.getElementById("proxima-atualizacao").innerText = `Próxima Atualização: ${proximaAtualizacao.toLocaleTimeString()}`;
-}
-
 preencher();
-atualizarCronometro();
 
-setInterval(()=>{
-    if (new Date().toLocaleTimeString() == proximaAtualizacao.toLocaleTimeString()){
-        preencher();
-        atualizarCronometro();
-    }else{
-        document.getElementById("relogio").innerText = `Agora: ${new Date().toLocaleTimeString()}`
-    }
-
-}, 1000);
-
-// const botao = document.createElement("button");
-// botao.innerText = "Teste";
-// botao.onclick = preencher;
-// document.querySelector(".container").appendChild(botao);
+const botao = document.querySelector("button");
+botao.classList.add("vaporwave-btn")
+botao.onclick = preencher;
+document.querySelector(".container").appendChild(botao);
