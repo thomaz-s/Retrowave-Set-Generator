@@ -1,20 +1,20 @@
-# 🎮 Retrowave Random Setup Generator
+# 🎮 Retrowave Set Generator
 
 Uma aplicação simples para gerar combinações aleatórias de opções para jogar **Retrowave**.
 
 ## 📌 Sobre o projeto
 
-Este projeto foi criado com um objetivo bem específico: **me ajudar a decidir como jogar Retrowave a cada partida**.
+Este projeto foi criado com um objetivo bem específico: **me ajudar a decidir como escolher as opções do jogo Retrowave**.
 
-O jogo oferece muitas opções — como pistas, carros, pneus, estilos de placa e até o uso de sirene — e eu simplesmente não conseguia definir uma ordem lógica para experimentar todas elas.
+O jogo oferece muitas opções — como pistas, carros, pneus, estilos de placa e o uso ou não de sirene — e eu não conseguia definir uma ordem lógica para experimentar todas elas.
 
 Então resolvi fazer o seguinte:
 
 👉 Em vez de escolher manualmente, eu deixo o app gerar um conjunto aleatório
-👉 Jogo uma partida com essa configuração
-👉 Depois gero outra combinação e repito
 
-Simples, rápido e divertido.
+👉 Jogo no modo Time Limit com essa configuração
+
+👉 Depois gero outra combinação e repito
 
 ## 🎲 O que a aplicação gera
 
